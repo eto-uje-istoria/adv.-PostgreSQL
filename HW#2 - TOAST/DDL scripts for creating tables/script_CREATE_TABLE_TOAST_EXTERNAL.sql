@@ -1,0 +1,6 @@
+-- Таблица с TOAST стратегией EXTERNAL
+CREATE TABLE toast_external (
+    ID INTEGER PRIMARY KEY,
+    NAME VARCHAR
+);
+ALTER TABLE toast_external ALTER COLUMN name SET STORAGE EXTERNAL;

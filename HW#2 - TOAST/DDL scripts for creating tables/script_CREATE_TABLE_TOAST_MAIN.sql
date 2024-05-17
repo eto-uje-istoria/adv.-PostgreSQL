@@ -1,0 +1,6 @@
+-- Таблица с TOAST стратегией MAIN
+CREATE TABLE toast_main (
+    ID INTEGER PRIMARY KEY,
+    NAME VARCHAR
+);
+ALTER TABLE toast_main ALTER COLUMN name SET STORAGE MAIN;
